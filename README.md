@@ -11,9 +11,9 @@ Edit existing book information.
 Delete books from the library.
 
 **Member Information Management:**
-. Add new members with details like name, email, and phone number.
-. Edit existing member information.
-. Remove members from the member list.
+Add new members with details like name, email, and phone number.
+Edit existing member information.
+Remove members from the member list.
 
 **Borrowing/Returning Book Management:**
 Create borrowing slips for specific members, including book information and borrowing date.
