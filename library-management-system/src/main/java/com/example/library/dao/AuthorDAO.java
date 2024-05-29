@@ -18,7 +18,8 @@ public class AuthorDAO {
             while (resultSet.next()) {
                 Author author = new Author(
                         resultSet.getInt("author_id"),
-                        resultSet.getString("author_name")
+                        resultSet.getString("name"),
+                        resultSet.getString("contact")
                 );
                 authors.add(author);
             }
@@ -35,6 +36,7 @@ public class AuthorDAO {
 
             statement.setInt(1, author.getAuthorId());
             statement.setString(2, author.getName());
+            statement.setString(3, author.getContact());
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -47,6 +49,7 @@ public class AuthorDAO {
              PreparedStatement statement = connection.prepareStatement(query)) {
 
             statement.setString(1, author.getName());
+            statement.setString(2, author.getContact());
             statement.setInt(3, author.getAuthorId());
             statement.executeUpdate();
         } catch (SQLException e) {

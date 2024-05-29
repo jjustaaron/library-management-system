@@ -3,10 +3,12 @@ package com.example.library.model;
 public class Author {
     private int authorId;
     private String name;
+    private String contact;
 
-    public Author(int authorId, String name) {
+    public Author(int authorId, String name, String contact) {
         this.authorId = authorId;
         this.name = name;
+        this.contact = contact;
     }
 
     // Getters and Setters
@@ -24,5 +26,13 @@ public class Author {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
     }
 }

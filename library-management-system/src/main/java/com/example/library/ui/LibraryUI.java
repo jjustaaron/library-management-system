@@ -17,8 +17,6 @@ public class LibraryUI extends JFrame {
         tabbedPane.addTab("Books", new BookPanel());
         tabbedPane.addTab("Members", new MemberPanel());
         tabbedPane.addTab("Borrowings", new BorrowingPanel());
-        tabbedPane.addTab("Author", new AuthorPanel());
-
 //        tabbedPane.addTab("Reports", new ReportPanel());
     }
 
